@@ -45,4 +45,9 @@ class Song
     self.artist_name = artist.strip
     self
   end
+
+  def self.create_from_filename(filename)
+    self.new_from_filename(filename)
+    @@all << self
+    self
 end

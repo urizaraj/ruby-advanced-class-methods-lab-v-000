@@ -43,9 +43,10 @@ class Song
 
   def self.new_from_filename(filename)
     artist, title, extension = filename.split(/[-.]+/)
-    self.name = title.strip
-    self.artist_name = artist.strip
-    self
+    song = self.new
+    song.name = title.strip
+    song.artist_name = artist.strip
+    song
   end
 
   def self.create_from_filename(filename)

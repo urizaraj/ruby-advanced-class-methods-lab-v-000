@@ -19,6 +19,5 @@ class Song
     self.name = name
     @@all << self
     self
-
-
+  end
 end
